@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_dialog_layout_design_user_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/buyPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Price:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_buy_prie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/buyPrice"
+        android:hint=""
+        android:paddingStart="@dimen/_20sdp"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/salePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sale Price"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/buyPrice"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_sale_prie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_below="@id/buyPrice"
+        android:layout_toRightOf="@id/salePrice"
+        android:hint=""
+        android:layout_marginTop="15dp"
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/phNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/salePrice"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/salePrice"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/phNumber"
+        android:hint=""
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phNumber"
+        android:layout_marginTop="20dp"
+        android:text="Person Name"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phNumber"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_alignStart="@id/et_phone"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/name"
+        android:hint=""
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/bus_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:text="Truck Number"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_bus"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_alignStart="@id/et_phone"
+        android:layout_marginTop="15dp"
+        android:hint=""
+        android:inputType="number" />
+    <TextView
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bus_number"
+        android:layout_marginTop="20dp"
+        android:text="Buy"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_buy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_below="@id/bus_number"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@id/et_phone"
+
+        android:hint=""
+        android:inputType="textMultiLine" />
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy"
+        android:layout_marginTop="20dp"
+        android:text="Sale"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_sale"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@id/et_phone"
+
+        android:hint=""
+        android:inputType="textMultiLine" />
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale"
+        android:layout_marginTop="20dp"
+        android:text="Note"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:paddingStart="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sale"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/note"
+        android:hint=""
+        android:inputType="textMultiLine" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/note"
+
+        android:layout_marginTop="20dp"
+        android:text="Cancel" />
+</RelativeLayout>
